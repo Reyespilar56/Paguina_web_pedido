@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Servicio de Internet</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+         
+            <ul class="menu-bar">
+
+                <a href="principal.html" id="miBoton">
+                    <img id="principal" src="/imagenes/digy.png" alt="Imagen botón">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="servicios.html">Paquetes</a></li>
+            <li><a href="planes.html">Preguntas frecuentes</a></li>
+            <li><a href="contacto.html">Centro de ayuda</a></li>
+            <li><a href="soporte.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="./imagenes/ttt.gif">
+    <section>
+        <h1>Bienvenido a Nuestro Servicio de Internet</h1>
+        <p>Esta es nuestra página principal.</p>
+  
+
+
+    <footer>
+        <p>&copy; 2024 Servicio de Internet. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,506 @@
+/* Reset y configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='327' height='327' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23DFD7D9' stroke-width='1.1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23950E09'%3E%3Ccircle cx='769' cy='229' r='9'/%3E%3Ccircle cx='539' cy='269' r='9'/%3E%3Ccircle cx='603' cy='493' r='9'/%3E%3Ccircle cx='731' cy='737' r='9'/%3E%3Ccircle cx='520' cy='660' r='9'/%3E%3Ccircle cx='309' cy='538' r='9'/%3E%3Ccircle cx='295' cy='764' r='9'/%3E%3Ccircle cx='40' cy='599' r='9'/%3E%3Ccircle cx='102' cy='382' r='9'/%3E%3Ccircle cx='127' cy='80' r='9'/%3E%3Ccircle cx='370' cy='105' r='9'/%3E%3Ccircle cx='578' cy='42' r='9'/%3E%3Ccircle cx='237' cy='261' r='9'/%3E%3Ccircle cx='390' cy='382' r='9'/%3E%3C/g%3E%3C/svg%3E");
+}
+    header {
+        background-color: rgba(107, 102, 102, 0.8); /* 0.8 es la transparencia */
+        padding: 10px 0;
+    }
+    
+.menu-bar {
+    list-style: none;
+    text-align: center;
+}
+
+.menu-bar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu-bar a {
+    color: rgb(24, 22, 22);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-bar a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(233, 216, 216, 0); /* Usar RGBA para transparencia si es necesario */
+    color: rgb(90, 89, 89);
+    text-align: center;
+}
+
+img {
+    max-width: 100%; /* Hace que la imagen sea responsiva */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+/* Estilo para los íconos de contacto */
+#contacto i {
+    margin-right: 10px;
+    color: #31a4da;
+}
+
+#contacto a {
+    text-decoration: none;
+    color: #333;
+}
+
+#contacto a:hover {
+    color: #4e63db;
+    text-decoration: underline;
+}
+
+#contacto p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+}
+
+#principal {
+    color: beige;
+    width: 90%;
+    max-width: 15%;
+    margin: 0 15px 5px 10px; /* Abreviación de márgenes */
+    /* float:left; */ /* Removido en favor de Flexbox para mejor responsividad */
+}
+
+/* Evitar duplicación de selectores body */
+
+/* Estilo para la tabla de precios */
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan en pantallas pequeñas */
+}
+
+.pricing-card {
+    background-color: white; /* Fondo blanco para las tarjetas */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 300px; /* Ancho fijo */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s; /* Transición suave al pasar el mouse */
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px); /* Elevar la tarjeta al pasar el mouse */
+}
+
+.pricing-card h2 {
+    font-size: 22px;
+    color: #eee9e9; /* Color de texto blanco */
+    padding: 10px 0;
+}
+
+.basic, .professional, .business { 
+    background-color: #1e3c9e; /* Color común para todas las tarjetas */
+}
+
+.price {
+    font-size: 2cm; /* Mantén una unidad consistente */
+    color: #c4ec0f; /* Color oscuro */
+    margin: 10px 0;
+}
+
+.currency {
+    font-size: 24px;
+    vertical-align: super;
+}
+
+.period {
+    font-size: 18px;
+    color: #c4ec0f;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c51818; /* Botón azul */
+    color: rgb(2, 2, 2);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+/* Media Queries para mejorar la responsividad */
+@media (max-width: 1200px) {
+    /* Ajustes para pantallas medianas */
+    .pricing-card {
+        width: 250px;
+    }
+
+    .menu-bar a {
+        font-size: 16px;
+    }
+
+    .pricing-card h2 {
+        font-size: 20px;
+    }
+
+    .price {
+        font-size: 1.8cm;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Ajustes para tabletas */
+    .menu-bar li {
+        display: block; /* Cambia a bloque en pantallas medianas */
+        margin: 10px 0; /* Espaciado vertical */
+    }
+
+    #principal {
+        max-width: 50%; /* Aumenta el ancho máximo en pantallas medianas */
+    }
+
+    .pricing-card {
+        width: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ajustes para pantallas pequeñas (móviles en horizontal) */
+    #principal {
+        max-width: 50%; /* Aumenta el ancho máximo en pantallas pequeñas */
+    }
+
+    .pricing-card {
+        max-width: 90%; /* Hace las tarjetas más anchas en pantallas pequeñas */
+    }
+
+    .menu-bar li {
+        display: block; /* Cambia a bloque en pantallas pequeñas */
+        margin: 10px 0; /* Espaciado vertical */
+    }
+
+    .container {
+        flex-direction: column; /* Apilar elementos verticalmente */
+    }
+
+    header, footer {
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para móviles */
+    .pricing-card {
+        width: 100%; /* Tarjetas a ancho completo */
+    }
+
+    .pricing-card h2 {
+        font-size: 18px;
+    }
+
+    .price {
+        font-size: 1.5cm;
+    }
+
+    .menu-bar a {
+        font-size: 14px;
+    }
+
+    #principal {
+        max-width: 100%; /* Ancho completo en móviles */
+        margin: 10px 0;
+    }
+}
+
+/* Estilos para secciones específicas */
+
+/* Estilos principal body (Eliminado para evitar duplicación) */
+/* .paquetes, .info-card, .vision, .mision, .justo2, .tarjeta-contacto, etc., se mantienen igual */
+
+/* Paquetes */
+.paquetes {
+    background-image: url('tu_imagen_fondo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Info Card */
+.info-card {
+    opacity: 0; /* Los elementos están inicialmente ocultos */
+    transform: translateY(100px); /* Empieza desplazado hacia abajo */
+    transition: all 0.6s ease-out;
+}
+
+.info-card.visible {
+    opacity: 1; /* Aparece */
+    transform: translateY(0); /* Vuelve a su posición original */
+}
+
+/* Misión y Visión */
+.vision, .mision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #12406e; /* Color de fondo claro */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.vision h2, .mision h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 50px;
+    color: #f5f3f3;
+    margin-bottom: 10px;
+}
+
+.vision p, .mision p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #f8f3f3;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.vision:hover, .mision:hover {
+    transform: translateY(-10px); /* Efecto de elevar la tarjeta */
+    box-shadow: 0 8px 16px rgba(173, 25, 25, 0.836); /* Sombra más intensa */
+}
+
+/* Alineación del texto dentro de las tarjetas */
+.justo2 {
+    text-align: justify;
+}
+
+/* Tarjeta de Contacto */
+.tarjeta-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #e0f7fa; /* Color de fondo diferente */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Alineación centrada */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.tarjeta-contacto h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #000000; /* Color verde oscuro */
+    margin-bottom: 15px;
+}
+
+.tarjeta-contacto p a {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #00796b; /* Mismo color que el título */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.tarjeta-contacto p a:hover {
+    color: #004d40; /* Color más oscuro en hover */
+}
+
+.tarjeta-contacto i {
+    margin-right: 10px;
+    color: #00796b; /* Color de los iconos */
+}
+
+.tarjeta-contacto:hover {
+    transform: translateY(-10px); /* Efecto de elevar la tarjeta */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+/* Preguntas Frecuentes */
+.faq-question {
+    width: 100%;
+  
+    color: rgb(8, 2, 2);
+    padding: 15px;
+    border: none;
+    text-align: left;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    outline: none;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #d8d5e0;
+    border-left: 3px solid #1309a0;
+    margin-top: 10px;
+}
+
+.sub-question {
+    background-color: #081D40;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.37'%3E%3Cpolygon fill='%23120b63' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%234e0c87' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23ab0dac' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23d20c78' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23F50E23' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgb(15, 15, 15);
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sub-question:hover {
+    background-color: #af341e;
+}
+
+.sub-answer {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #6b9da3;
+    border-left: 3px solid #004d40;
+}
+
+.sub-answer.active {
+    display: block;
+}
+
+.faq-question, .sub-question {
+    display: flex;
+    align-items: center;
+ 
+    color: rgb(22, 21, 21);
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.faq-question:hover, .sub-question:hover {
+    background-color: #cc2727;
+}
+
+/* Sección de Contacto */
+.contact-section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(223, 4, 4, 0.1);
+}
+
+.contact-info, .address-info {
+    margin-top: 15px;
+}
+
+.contact-info a, .address-info a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Media Queries Adicionales para Mejorar la Responsividad */
+
+/* Ajustes para pantallas extra pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+    header, footer {
+        padding: 15px 10px;
+    }
+
+    .menu-bar li {
+        margin: 10px 0;
+    }
+
+    .pricing-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .pricing-card h2 {
+        font-size: 18px;
+    }
+
+    .price {
+        font-size: 1.5cm;
+    }
+
+    .sub-question, .faq-question {
+        font-size: 16px;
+    }
+
+    .tarjeta-contacto {
+        max-width: 90%;
+    }
+}
+
+/* Ajustes para pantallas grandes (más de 1200px) */
+@media (min-width: 1201px) {
+    .pricing-table {
+        gap: 40px;
+    }
+
+    .pricing-card {
+        width: 350px;
+    }
+
+    .pricing-card h2 {
+        font-size: 24px;
+    }
+
+    .price {
+        font-size: 2.2cm;
+    }
+
+    .menu-bar a {
+        font-size: 20px;
+    }
+}

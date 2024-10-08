@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+   <title>Me tods de pago</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #000000;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='327' height='327' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23DFD7D9' stroke-width='1.1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23950E09'%3E%3Ccircle cx='769' cy='229' r='9'/%3E%3Ccircle cx='539' cy='269' r='9'/%3E%3Ccircle cx='603' cy='493' r='9'/%3E%3Ccircle cx='731' cy='737' r='9'/%3E%3Ccircle cx='520' cy='660' r='9'/%3E%3Ccircle cx='309' cy='538' r='9'/%3E%3Ccircle cx='295' cy='764' r='9'/%3E%3Ccircle cx='40' cy='599' r='9'/%3E%3Ccircle cx='102' cy='382' r='9'/%3E%3Ccircle cx='127' cy='80' r='9'/%3E%3Ccircle cx='370' cy='105' r='9'/%3E%3Ccircle cx='578' cy='42' r='9'/%3E%3Ccircle cx='237' cy='261' r='9'/%3E%3Ccircle cx='390' cy='382' r='9'/%3E%3C/g%3E%3C/svg%3E");
+      }
+        .logo {
+            cursor: pointer;
+            margin: 10px;
+            display: inline-block;
+            transition: transform 0.2s;
+            text-align: center;
+            flex: 1 1 150px; /* Asegura que las imágenes se ajusten en pantallas más pequeñas */
+        }
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+        .logo:hover {
+            transform: scale(1.1);
+        }
+        .payment-details {
+            display: none;
+            margin-top: 10px;
+            border: 1px solid #c22923;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f0e5e5;
+        }
+        .short-text {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #f3f1f1;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Flexbox para contacto y dirección */
+        .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(235, 230, 230, 0.1);
+            gap: 20px; /* Espacio entre columnas */
+        }
+        .contact-info, .address-info {
+            flex: 1;
+            padding: 10px;
+            min-width: 280px;
+        }
+        .contact-info p, .address-info p {
+            margin: 10px 0;
+        }
+        .contact-info a {
+            color: #1bcc41;
+            text-decoration: none;
+        }
+
+        /* Media queries para dispositivos móviles */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .logo img {
+                width: 80px; /* Ajusta el tamaño de las imágenes en pantallas pequeñas */
+            }
+            .contact-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            h2 {
+                font-size: 1.5rem; /* Reduce el tamaño del título en pantallas pequeñas */
+            }
+        }
+
+        /* Media query para pantallas aún más pequeñas */
+        @media (max-width: 480px) {
+            .logo img {
+                width: 70px; /* Tamaño de imagen más pequeño */
+            }
+            h2 {
+                font-size: 1.3rem;
+                margin-bottom: 20px;
+            }
+            .short-text {
+                font-size: 12px; /* Texto más pequeño */
+            }
+            .contact-info, .address-info {
+                text-align: center; /* Centra el texto en pantallas muy pequeñas */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="inicio.html" id="miBoton">
+    <img id="principal" src="/imagenes/digy.png" alt="Imagen botón"> </a>
+    <h2 style="color: #f8f8f8;">Métodos de Pago</h2>
+    
+    <div class="text-center">
+        <div class="logo" onclick="toggleDetails('oxxoDetails')">
+            <img src="./imagenes/oxxo.jpg" alt="Oxxo">
+            <p class="short-text">Pago en Oxxo</p>
+        </div>
+        <div class="logo" onclick="toggleDetails('sucursalDetails')">
+            <img src="/imagenes/digy.png" alt="Digy Networks">
+            <p class="short-text">Sucursales Digy</p>
+        </div>
+        <div class="logo" onclick="toggleDetails('transferenciaDetails')">
+            <img src="/imagenes/transfer.png" alt="Transferencia">
+            <p class="short-text">Transferencia y depositos</p>
+        </div>
+        <div class="logo" onclick="toggleDetails('telecomDetails')">
+            <img src="/imagenes/telecom.png" alt="Telecom">
+            <p class="short-text">Telecom</p>
+        </div>
+        <div class="logo" onclick="toggleDetails('yastasDetails')">
+            <img src="/imagenes/yastas.png" alt="Yastás">
+            <p class="short-text">Puntos Yastás</p>
+        </div>
+        <div class="logo" onclick="toggleDetails('farmaciaDetails')">
+            <img src="/imagenes/farmacias guadalajara.png" alt="Farmacia Guadalajara">
+            <p class="short-text">Farmacia Guadalajara</p>
+        </div>
+        <div class="logo" onclick="toggleDetails('BBVA')">
+            <img src="/imagenes/bbva.jpg" alt="BBVA">
+            <p class="short-text">BBVA</p>
+        </div>
+        <div class="logo" onclick="toggleDetails('Banamex')">
+            <img src="/imagenes/banamex.jpg" alt="Banamex">
+            <p class="short-text">Banamex</p>
+        </div>
+        <div class="logo" onclick="toggleDetails('Banorte')">
+            <img src="/imagenes/banorte.jpg" alt="Banorte">
+            <p class="short-text">Banorte</p>
+        </div>
+    </div>
+
+    <div id="oxxoDetails" class="payment-details" style="list-style-type: none; padding: 0; text-align: center;">
+        <p>Puedes realizar el pago con tu número de referencia en cualquier tienda Oxxo.</p>
+        <p>Nuestros números de cuenta son:</p>
+        <ul >
+            <li>Bancomer: XXXXXXXXXXXX</li>
+            <li>Banamex: XXXXXXXXXXXX</li>
+            <li>Banorte: XXXXXXXXXXXX</li>
+        </ul>
+        
+    </div>
+
+    <div id="sucursalDetails" class="payment-details"style="list-style-type: none; padding: 0; text-align: center;">
+        <p>Realiza el pago en cualquiera de nuestras sucursales de Digy Networks, presentando:</p>
+        <ul>
+            <li>Nombre completo del titular <p style="color: rgb(253, 11, 11);">Ejemplo: Juan Pérez Hernández</p></li>
+            <li>Número de referencia <p>Ejemplo: 82749202</p></li>
+            <li style="color: #c22923;">Ubicación: <P></P></li>
+        </ul>
+    </div>
+
+    <div id="transferenciaDetails" class="payment-details"style="list-style-type: none; padding: 0; text-align: center;">
+        <p>Puedes transferir o depositar en efectivo a nuestras cuentas.</p>
+    </div>
+
+    <div id="telecomDetails" class="payment-details"style="list-style-type: none; padding: 0; text-align: center;">
+        <p>Paga en cualquier sucursal de Telecom.</p>
+    </div>
+
+    <div id="yastasDetails" class="payment-details"style="list-style-type: none; padding: 0; text-align: center;">
+        <p>Paga en los puntos Yastás disponibles en tiendas participantes.</p>
+    </div>
+
+    <div id="farmaciaDetails" class="payment-details"style="list-style-type: none; padding: 0; text-align: center;">
+        <p>Realiza tu pago en Farmacia Guadalajara.</p>
+    </div>
+    <div id="BBVA" class="payment-details"style="list-style-type: none; padding: 0; text-align: center;">
+        <p>Realiza tu pago en BBVA.</p>
+    </div>
+    <div id="Banorte" class="payment-details"style="list-style-type: none; padding: 0; text-align: center;">
+        <p>Realiza tu pago en BANORTE.</p>
+    </div>
+    <div id="Banamex" class="payment-details"style="list-style-type: none; padding: 0; text-align: center;">
+        <p>Realiza tu pago en sucursales Citi banamex.</p>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementsByClassName('payment-details');
+            for (let i = 0; i < details.length; i++) {
+                details[i].style.display = 'none'; // Ocultar todos los detalles
+            }
+            const selectedDetails = document.getElementById(id);
+            if (selectedDetails) {
+                selectedDetails.style.display = selectedDetails.style.display === 'block' ? 'none' : 'block'; // Alternar visibilidad
+            }
+        }
+    </script>
+   
+   <section id="contacto">
+      
+    <section class="contact-section" style="display: flex; justify-content: space-between; padding: 20px; background-color: #8d8787; border-radius: 8px; box-shadow: 0 2px 10px rgba(82, 12, 12, 0.1);">
+
+        <div class="contact-info" style="flex: 1; padding: 10px;">
+            <h2 style="text-align: center;">Contáctanos</h2>
+            <p><i class="fab fa-whatsapp"></i> <a style="color: #1bcc41;" href="https://wa.me/1234567890" target="_blank">WhatsApp</a></p>
+            <p><i class="fab fa-whatsapp"></i> <a style="color: #1bcc41;" href="https://wa.me/1234567890" target="_blank">WhatsApp</a></p>
+            <p> <i class="fab fa-facebook"></i> <a style="color: blue;" href="https://www.facebook.com/DigyNetworks?mibextid=ZbWKwL" target="_blank">Facebook</a></p>
+            <p>📧 Email: <a href="mailto:soporte@digynetworks.com" style="color: #1bcc41;"></a></p>
+        </div>
+    
+        <div class="address-info" style="flex: 1; padding: 10px;">
+            <h2 style="text-align: center;">Nuestra Dirección</h2>
+            <p>Dirección: Blvd. Demetrio Ruiz Malerva 65-local 7E, Zapote Gordo, 92820 Túxpam de Rodríguez Cano, Ver.</p>
+            <p>Horario: Lunes a Viernes de 8:00 AM a :1900 PM <br/>
+            Sabados 8:00 AM a 13:00 pm</p>
+            
+        </div>
+        
+    </section>
+</section>
+    
+</section>
+</body>
+</html>
