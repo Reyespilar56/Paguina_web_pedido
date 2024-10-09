@@ -23,77 +23,71 @@
         </nav>
     </header>
     <img src="./imagenes/ttt.gif">
-    <section>
-        <section id="faq">
-            
-            <section id="faq">
-                <div class="faq-item">
-                    <button class="faq-question" style="text-align: center; font-weight: bold; font-size: 24px;">¿Cómo generar mi número de referencia para pagar el servicio en Oxxo?</button>
-                    <div class="faq-answer">
-                        <p>Puedes solicitar tu número de referencia a través de:</p>
-                        <button class="sub-question" data-target="llamada">
-                            Llamada: 7838359700
-                        </button>
-                        <button class="sub-question" onclick="window.location.href='https://wa.me/7838340006?text=Hola%20cual%20seria%20mi%20numero%20de%20referencia' " style="font-size: #1bcc41;">
-                            WhatsApp: 7838340006
-                        </button>
-                        
-                        
-                        <div id="llamada" class="sub-answer">
-                            <p>Solicita tu número de referencia llamando a nuestro centro de atención al cliente.</p>
-                        </div>
-                        <div id="whatsapp" class="sub-answer">
-                            <p>En WhatsApp, selecciona la opción de generar número de referencia, y recibirás un link para hacer el pago.</p>
-                        </div>
-                    </div>
+    <section id="faq">
+        <div class="faq-item" style="border: 1px solid #ccc; border-radius: 10px; padding: 20px; margin-bottom: 20px; background-color: #f9f9f9;">
+            <button class="faq-question" style="background-color: #3b3b3b; color: #fff; text-align: center; font-weight: bold; font-size: 24px; padding: 15px 20px; border: none; border-radius: 8px; cursor: pointer; width: 100%;">
+                ¿Cómo generar mi número de referencia para pagar el servicio en Oxxo?
+            </button>
+            <div class="faq-answer" style="margin-top: 15px; padding: 15px; background-color: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                <p>Puedes solicitar tu número de referencia a través de:</p>
+                <button class="sub-question" style="background-color: #eaeaea; color: #000; padding: 10px; margin-right: 10px; border-radius: 5px; cursor: pointer;">
+                    Llamada: 7838359700
+                </button>
+                <button class="sub-question" style="background-color: #edf1ef; color: #141313; padding: 10px; border-radius: 5px; cursor: pointer;" onclick="window.location.href='https://wa.me/7838359700?text=Hola%20cual%20seria%20mi%20numero%20de%20referencia'">
+                    WhatsApp:  7838359700
+                </button>
+            </div>
+        </div>
+    
+        <div class="faq-item" style="border: 1px solid #ccc; border-radius: 10px; padding: 20px; margin-bottom: 20px; background-color: #f9f9f9;">
+            <button class="faq-question" style="background-color: #3b3b3b; color: #fff; text-align: center; font-weight: bold; font-size: 24px; padding: 15px 20px; border: none; border-radius: 8px; cursor: pointer; width: 100%;" onclick="window.open('pagos.html', '_red');">
+                ¿Qué métodos de pago existen para realizar el pago del servicio?
+            </button>
+        </div>
+    
+        <div class="faq-item" style="border: 1px solid #ccc; border-radius: 10px; padding: 20px; margin-bottom: 20px; background-color: #f9f9f9;">
+            <button class="faq-question" style="background-color: #3b3b3b; color: #fff; text-align: center; font-weight: bold; font-size: 24px; padding: 15px 20px; border: none; border-radius: 8px; cursor: pointer; width: 100%;">
+                ¿Dónde se encuentran los centros de cobro Digy Networks o sucursales?
+            </button>
+            <div class="faq-answer" style="margin-top: 15px; padding: 15px; background-color: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                <p>Nuestras sucursales están ubicadas en:</p>
+                <button class="sub-question" style="background-color: #eaeaea; color: #000; padding: 10px; margin-right: 10px; border-radius: 5px; cursor: pointer;" data-target="tuxpan">Tuxpan</button>
+                <button class="sub-question" style="background-color: #eaeaea; color: #000; padding: 10px; border-radius: 5px; cursor: pointer;" data-target="huauchinango">Huauchinango</button>
+                <div id="tuxpan" class="sub-answer" style="margin-top: 10px;">
+                    <p>Nuestra sucursal de Tuxpan está ubicada en Plaza Cristal.</p>
+                    <li style="color: rgb(7, 64, 189); list-style: none;">
+                        <span style="margin-right: 5px;"><i class="fas fa-map-marker-alt"></i></span>
+                        <a href="https://maps.app.goo.gl/dJNJCvuoDu68N1XF6" target="_blank" style="text-decoration: none; color: rgb(7, 64, 189);">Ubicación</a>
+                    </li>
                 </div>
-              
-                <div class="faq-item">
-                    <button class="faq-question" style="text-align: center; font-weight: bold; font-size: 24px;" onclick="window.open('pagos.html', '_blank');">¿Qué métodos de pago existen para realizar el pago del servicio?</button>
-                </div>
-                                
-                    
-            
-                <div class="faq-item">
-                    <button class="faq-question" style="text-align: center; font-weight: bold; font-size: 24px;">¿Dónde se encuentran los centros de cobro Digy Networks o sucursales?</button>
-                    <div class="faq-answer">
-                        <p>Nuestras sucursales están ubicadas en:</p>
-                        <button class="sub-question" data-target="tuxpan">Tuxpan</button>
-                        <button class="sub-question" data-target="huauchinango">Huauchinango</button>
-                        
-                        <div id="tuxpan" class="sub-answer">
-                            <p>Nuestra sucursal de Tuxpan está ubicada en la plaza central.</p>
-                        </div>
-                        <div id="huauchinango" class="sub-answer">
-                            <p>Encuentra nuestra sucursal en Huauchinango en la avenida principal.</p>
-                        </div>
-                    </div>
-                </div>
-            
-
-            
-                <div class="faq-item">
-                    <button class="faq-question" style="text-align: center; font-weight: bold; font-size: 24px;">¿Cómo puedo realizar el cambio de contraseña y/o nombre de mi red?</button>
-                    <div class="faq-answer">
-                        <p>Para cambiar tu contraseña y/o nombre de la red, necesitamos los siguientes datos:</p>
-                        <ul>
-                            <li>Foto del INE del titular (solo parte frontal).</li>
-                            <li>Contraseña deseada (mínimo 10 caracteres, máximo 12).</li>
-                            <li>Nuevo nombre de la red (opcional).</li>
-                            <li>Solo se admiten letras y números. No se permiten caracteres especiales (., - _ @).</li>
-                        </ul>
-                    </div>
-                </div>
-            
-                <!-- Añadir más preguntas siguiendo la misma estructura -->
-            </section>
-            
-            
-        </section>
-        
-            
-        
+            </div>
+        </div>
+    
+        <div class="faq-item" style="border: 1px solid #ccc; border-radius: 10px; padding: 20px; margin-bottom: 20px; background-color: #f9f9f9;">
+            <button class="faq-question" style="background-color: #3b3b3b; color: #fff; text-align: center; font-weight: bold; font-size: 24px; padding: 15px 20px; border: none; border-radius: 8px; cursor: pointer; width: 100%;">
+                ¿Cómo puedo realizar el cambio de contraseña y/o nombre de mi red?
+            </button>
+            <div class="faq-answer" style="margin-top: 15px; padding: 15px; background-color: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                <p>Para cambiar tu contraseña y/o nombre de la red, necesitamos los siguientes datos:</p>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li style="margin-bottom: 10px;"><i class="fas fa-id-card" style="color: #3b3b3b;"></i> Foto del INE del titular (solo parte frontal).</li>
+                    <li style="margin-bottom: 10px;"><i class="fas fa-key" style="color: #3b3b3b;"></i> Contraseña deseada (mínimo 10 caracteres, máximo 12).</li>
+                    <li style="margin-bottom: 10px;"><i class="fas fa-wifi" style="color: #3b3b3b;"></i> Nuevo nombre de la red (opcional).</li>
+                    <li style="margin-bottom: 10px;"><i class="fas fa-exclamation-circle" style="color: #3b3b3b;"></i> Solo se admiten letras y números. No se permiten caracteres especiales (., - _ @).</li>
+                </ul>
+            </div>
+            <div class="faq-support" style="margin-top: 20px; text-align: center;">
+                <button class="support-btn" style="background-color: #25d366; color: #fff; padding: 10px 20px; font-size: 18px; font-weight: bold; border: none; border-radius: 8px; cursor: pointer;" onclick="window.location.href='https://wa.me/7838359700?text=Hola%20necesito%20ayuda%20con%20el%20cambio%20de%20contraseña%20o%20nombre%20de%20mi%20red.'">
+                    Contactar Soporte Técnico <i class="fab fa-whatsapp"></i>
+                </button>
+            </div>
+        </div>
     </section>
+    
+        
+            
+        
+   
 
     <section id="contacto">
       

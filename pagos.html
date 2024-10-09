@@ -106,12 +106,24 @@
                 text-align: center; /* Centra el texto en pantallas muy pequeñas */
             }
         }
+        /*olejae*/
+        #miBoton {
+    display: inline-block; /* Asegúrate de que el enlace se comporte como un bloque en línea */
+    transition: transform 0.s ease; /* Transición suave para el efecto */
+}
+
+#miBoton:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+}
+#miboton{
+width: 10px;
+}
     </style>
 </head>
 
 <body>
     <a href="inicio.html" id="miBoton">
-    <img id="principal" src="/imagenes/digy.png" alt="Imagen botón"> </a>
+    <img style="text-align: center;" id="principal" src="/imagenes/digy.png" alt="Imagen botón"> </a>
     <h2 style="color: #f8f8f8;">Métodos de Pago</h2>
     
     <div class="text-center">
@@ -135,10 +147,7 @@
             <img src="/imagenes/yastas.png" alt="Yastás">
             <p class="short-text">Puntos Yastás</p>
         </div>
-        <div class="logo" onclick="toggleDetails('farmaciaDetails')">
-            <img src="/imagenes/farmacias guadalajara.png" alt="Farmacia Guadalajara">
-            <p class="short-text">Farmacia Guadalajara</p>
-        </div>
+       
         <div class="logo" onclick="toggleDetails('BBVA')">
             <img src="/imagenes/bbva.jpg" alt="BBVA">
             <p class="short-text">BBVA</p>
@@ -157,9 +166,16 @@
         <p>Puedes realizar el pago con tu número de referencia en cualquier tienda Oxxo.</p>
         <p>Nuestros números de cuenta son:</p>
         <ul >
-            <li>Bancomer: XXXXXXXXXXXX</li>
-            <li>Banamex: XXXXXXXXXXXX</li>
-            <li>Banorte: XXXXXXXXXXXX</li>
+            <li><p style="color: #f00909;">BANORTE</p>
+                <p> Digy Networks SA de CV</p>
+                <p></p>Cuenta: 1158473739</p>
+                <p> Tarjeta: 4189281047629119</p></li>
+                <br />
+            <li><p style="color: #f00909;">BBVA</p>
+                <p>Digy Networks SA de CV</p>
+                <p> Cuenta: 0101563548</p>
+                <p>Tarjeta: 4555133000948133</p></li>
+           
         </ul>
         
     </div>
@@ -168,31 +184,71 @@
         <p>Realiza el pago en cualquiera de nuestras sucursales de Digy Networks, presentando:</p>
         <ul>
             <li>Nombre completo del titular <p style="color: rgb(253, 11, 11);">Ejemplo: Juan Pérez Hernández</p></li>
-            <li>Número de referencia <p>Ejemplo: 82749202</p></li>
-            <li style="color: #c22923;">Ubicación: <P></P></li>
-        </ul>
+            <li>ACEPTAMOS PAGOS EN 
+                <p><li>EFECTIVO</li>
+                <li style="color: rgb(253, 11, 11);">TARGETA
+                    <li>DEBITO</li>
+                <li>CREDITO</li>
+                </li>
+                </p>
+            </li>
+
+            <li style="color: rgb(7, 64, 189);">
+                <span style="margin-right: 5px;">
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <a href="https://maps.app.goo.gl/dJNJCvuoDu68N1XF6" target="_blank" style="text-decoration: none; color: rgb(7, 64, 189);">
+                  Ubicación
+                </a>
+              </li> </ul>
     </div>
 
     <div id="transferenciaDetails" class="payment-details"style="list-style-type: none; padding: 0; text-align: center;">
         <p>Puedes transferir o depositar en efectivo a nuestras cuentas.</p>
+        <ul >
+            <li><p style="color: rgb(253, 11, 11);">BANORTE</p>
+                <p> Digy Networks SA de CV</p>
+                <p></p>Cuenta: 1158473739</p>
+                <p> Tarjeta: 4189281047629119</p></li>
+                <br />
+            <li><p style="color: rgb(253, 11, 11);">BBVA</p>
+                <p>Digy Networks SA de CV</p>
+                <p> Cuenta: 0101563548</p>
+                <p>Tarjeta: 4555133000948133</p></li>
+           
+        </ul>
     </div>
 
     <div id="telecomDetails" class="payment-details"style="list-style-type: none; padding: 0; text-align: center;">
         <p>Paga en cualquier sucursal de Telecom.</p>
+     
+        
+        <p style="color: rgb(253, 11, 11);">Banorte</p>
+        <p>Digy Networks SA de CV</p>
+       
+        <p>Tarjeta: 4189281047629119</p>
+
+
+
+
     </div>
 
     <div id="yastasDetails" class="payment-details"style="list-style-type: none; padding: 0; text-align: center;">
         <p>Paga en los puntos Yastás disponibles en tiendas participantes.</p>
     </div>
 
-    <div id="farmaciaDetails" class="payment-details"style="list-style-type: none; padding: 0; text-align: center;">
-        <p>Realiza tu pago en Farmacia Guadalajara.</p>
-    </div>
     <div id="BBVA" class="payment-details"style="list-style-type: none; padding: 0; text-align: center;">
-        <p>Realiza tu pago en BBVA.</p>
+        <p style="color: rgb(253, 11, 11)"> Digy Networks SA de CV</p>
+            <p>Cuenta: 0101563548</p>
+           <p>Tarjeta: 4555133000948133</p>
     </div>
     <div id="Banorte" class="payment-details"style="list-style-type: none; padding: 0; text-align: center;">
         <p>Realiza tu pago en BANORTE.</p>
+        <p>BANORTE</p>
+        <p>Digy Networks SA de CV</p>
+            <p>Cuenta: 1158473739</p>
+                <p>Tarjeta: 4189281047629119</p>
+                    <p>Clabe (Transferencia desde un banco diferente a Banorte):</p><p> 072903011584737395</p>
     </div>
     <div id="Banamex" class="payment-details"style="list-style-type: none; padding: 0; text-align: center;">
         <p>Realiza tu pago en sucursales Citi banamex.</p>
