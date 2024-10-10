@@ -560,13 +560,13 @@ ul li {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
     max-width: 600px;
     margin: 0 auto;
-    border: 1px solid #ddd; /* Borde sutil */
+    border: 1px solid #f70404; /* Borde sutil */
 }
 
 .support-form h2 {
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
+    margin-bottom: 20cm;
+    font-size: 2rem;
     color: #333;
 }
 
@@ -583,11 +583,6 @@ ul li {
     transition: border-color 0.3s ease; /* Transición suave en hover/focus */
 }
 
-.support-form .form-control:focus {
-
-    box-shadow: 0 0 5px rgba(27, 204, 65, 0.5); /* Sombra verde al hacer foco */
-    outline: none; /* Quitar borde azul predeterminado */
-}
 
 .support-form textarea.form-control {
     resize: vertical; /* Solo permitir cambiar el tamaño verticalmente */
