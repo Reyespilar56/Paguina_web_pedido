@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Servicio de Internet</title>
-        <!-- Hoja de estilos de Bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio de Internet</title>
+    <!-- Hoja de estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 <body>
     <header>
         <nav>
@@ -24,31 +24,76 @@
         </nav>
     </header>
     
+    <img src="./imagenes/ttt.gif" alt="Animación de la página">
+    <!-- Aquí se añade el formulario -->
+    <section class="contact-form-section" style="padding: 20px; margin-top: 20px;">
+        <form id="contactForm" class="support-form" style="max-width: 600px; margin: auto; background-color: #8d8787; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Tu Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu Nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Tu Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Tu Email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Describe tu problema</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Describe tu problema" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100" style="width: 100%;">Enviar</button>
+        </form>
+    </section>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            try {
+               const response = await fetch('http://localhost:3000/send-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ nombre, email, mensaje })
+                });
+
+                if (response.ok) {
+                    alert('Datos guardados exitosamente');
+                } else {
+                    alert('Hubo un error al guardar los datos');
+                }
+            } catch (error) {
+                console.error('Error al enviar el formulario:', error);
+                alert('Error al enviar el formulario');
+            }
+        });
+    </script>
     
-    <img src="./imagenes/ttt.gif">
+    
 
     <section id="contacto">
-      
         <section class="contact-section" style="display: flex; justify-content: space-between; padding: 20px; background-color: #8d8787; border-radius: 8px; box-shadow: 0 2px 10px rgba(82, 12, 12, 0.1);">
 
             <div class="contact-info" style="flex: 1; padding: 10px;">
                 <h2 style="text-align: center;">Contáctanos</h2>
                 <p><i class="fab fa-whatsapp"></i> <a style="color: #1bcc41;" href="https://wa.me/1234567890" target="_blank">WhatsApp</a></p>
                 <p><i class="fab fa-whatsapp"></i> <a style="color: #1bcc41;" href="https://wa.me/1234567890" target="_blank">WhatsApp</a></p>
-                <p> <i class="fab fa-facebook"></i> <a style="color: blue;" href="https://www.facebook.com/DigyNetworks?mibextid=ZbWKwL" target="_blank">Facebook</a></p>
-                <p>📧 Email: <a href="mailto:soporte@digynetworks.com" style="color: #1bcc41;"></a></p>
+                <p><i class="fab fa-facebook"></i> <a style="color: blue;" href="https://www.facebook.com/DigyNetworks?mibextid=ZbWKwL" target="_blank">Facebook</a></p>
+                <p>📧 Email: <a href="mailto:soporte@digynetworks.com" style="color: #1bcc41;">soporte@digynetworks.com</a></p>
             </div>
+
             <div class="address-info" style="flex: 1; padding: 10px;">
                 <h2 style="text-align: center;">Nuestra Dirección</h2>
                 <p>Dirección: Blvd. Demetrio Ruiz Malerva 65-local 7E, Zapote Gordo, 92820 Túxpam de Rodríguez Cano, Ver.</p>
-                <p>Horario: Lunes a Viernes de 8:00 AM a :1900 PM <br/>
-                Sabados 8:00 AM a 13:00 pm</p>
-                
+                <p>Horario: Lunes a Viernes de 8:00 AM a 19:00 PM <br/>
+                Sábados 8:00 AM a 13:00 PM</p>
             </div>
-            
+
         </section>
-    </section>
-        
+
     
     <footer>
         <p>&copy; 2024 Servicio de Internet. Todos los derechos reservados.</p>

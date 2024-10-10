@@ -551,3 +551,60 @@ ul li {
         opacity: 0;
     }
 }
+/*formularios */
+/* Estilos personalizados para el formulario de contacto */
+.support-form {
+    background-color: #f9f9f9; /* Fondo claro */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ddd; /* Borde sutil */
+}
+
+.support-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.support-form .form-label {
+    font-weight: bold;
+    color: #f8eeee; /* Color de los textos */
+}
+
+.support-form .form-control {
+    border-radius: 5px; /* Bordes redondeados */
+    border: px solid #ccc; /* Borde gris claro */
+    padding: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease; /* Transición suave en hover/focus */
+}
+
+.support-form .form-control:focus {
+
+    box-shadow: 0 0 5px rgba(27, 204, 65, 0.5); /* Sombra verde al hacer foco */
+    outline: none; /* Quitar borde azul predeterminado */
+}
+
+.support-form textarea.form-control {
+    resize: vertical; /* Solo permitir cambiar el tamaño verticalmente */
+}
+
+.support-form button {
+    background-color: #1260b9b7; /* Color verde brillante */
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Suave transición en hover */
+    width: 100%;
+}
+
+.support-form button:hover {
+    background-color: #dd1919; /* Cambiar a verde más oscuro en hover */
+}
