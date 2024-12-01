@@ -19,31 +19,33 @@
                 <li><a href="servicios.html">Paquetes</a></li>
                 <li><a href="planes.html">Preguntas frecuentes</a></li>
                 <li><a href="contacto.html">Centro de ayuda</a></li>
-                <li><a href="soporte.html">Nosotros</a></li>
+           <!---<li><a href="soporte.html">Nosotros</a></li>-->
             </ul>
         </nav>
+        </header>
+    </br>
     </header>
     
     <img src="./imagenes/ttt.gif" alt="Animación de la página">
     <!-- Aquí se añade el formulario -->
-    <section class="contact-form-section" style="padding: 20px; margin-top: 20px;">
-        <form id="contactForm" class="support-form" style="max-width: 25cm; margin: auto; background-color: #8d8787; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); ">
-
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Tu Nombre</label>
-                <input style="width: 16cm;" type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu Nombre" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label" style="width: 50cm;">Tu Email</label>
-                <input style="width: 15cm;"  type="email" class="form-control" id="email" name="email" placeholder="Tu Email" required>
-            </div>
-            <div class="mb-3">
-                <label style="width: 50;" for="mensaje" class="form-label">Describe tu problema</label>
-                <textarea style="width: 15cm;"  class="form-control" id="mensaje" name="mensaje" placeholder="Describe tu problema" rows="4" required></textarea>
-            </div>
-            <button   type="submit" class="btn btn-primary w-100" style="width: 100%;">Enviar</button>
+    <section class="contact-form-section">
+        <form id="contactForm" class="support-form">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Tu Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu Nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Tu Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Tu Email" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Describe tu problema</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Describe tu problema" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
-    </section>
+      </section>
+      
     <script>
         document.getElementById('contactForm').addEventListener('submit', async (event) => {
             event.preventDefault();
@@ -53,7 +55,7 @@
             const mensaje = document.getElementById('mensaje').value;
 
             try {
-               const response = await fetch('http://localhost:3000/send-email', {
+               const response = await fetch('http://localhost:3010/send-email', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -75,8 +77,9 @@
     
     
 
+    
     <section id="contacto">
-        <section class="contact-section" style="display: flex; justify-content: space-between; padding: 20px; background-color: #8d8787; border-radius: 8px; box-shadow: 0 2px 10px rgba(82, 12, 12, 0.1);">
+        <section class="contact-section" style="display: flex; justify-content: space-between; padding: 20px; background-color: #000000; border-radius: 8px; box-shadow: 0 2px 10px rgba(82, 12, 12, 0.1);">
 
             <div class="contact-info" style="flex: 1; padding: 10px;">
                 <h2 style="text-align: center;">Contáctanos</h2>
@@ -87,9 +90,9 @@
             </div>
 
             <div class="address-info" style="flex: 1; padding: 10px;">
-                <h2 style="text-align: center;">Nuestra Dirección</h2>
-                <p>Dirección: Blvd. Demetrio Ruiz Malerva 65-local 7E, Zapote Gordo, 92820 Túxpam de Rodríguez Cano, Ver.</p>
-                <p>Horario: Lunes a Viernes de 8:00 AM a 19:00 PM <br/>
+                <h2 style="text-align: center; color: #ffffff;">Nuestra Dirección</h2>
+                <p style="color: #ffffff;">Dirección: Blvd. Demetrio Ruiz Malerva 65-local 7E, Zapote Gordo, 92820 Túxpam de Rodríguez Cano, Ver.</p>
+                <p style="color: #ffffff;">Horario: Lunes a Viernes de 8:00 AM a 19:00 PM <br/>
                 Sábados 8:00 AM a 13:00 PM</p>
             </div>
 
@@ -97,7 +100,7 @@
 
     
     <footer>
-        <p>&copy; 2024 Servicio de Internet. Todos los derechos reservados.</p>
+        <p style="color: #ffffff;">&copy; 2024 Servicio de Internet. Todos los derechos reservados.</p>
     </footer>
 
     <!-- Script de Bootstrap -->

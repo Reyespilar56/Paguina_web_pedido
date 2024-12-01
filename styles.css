@@ -8,11 +8,13 @@
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
-    background-color: #000000;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='327' height='327' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23DFD7D9' stroke-width='1.1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23950E09'%3E%3Ccircle cx='769' cy='229' r='9'/%3E%3Ccircle cx='539' cy='269' r='9'/%3E%3Ccircle cx='603' cy='493' r='9'/%3E%3Ccircle cx='731' cy='737' r='9'/%3E%3Ccircle cx='520' cy='660' r='9'/%3E%3Ccircle cx='309' cy='538' r='9'/%3E%3Ccircle cx='295' cy='764' r='9'/%3E%3Ccircle cx='40' cy='599' r='9'/%3E%3Ccircle cx='102' cy='382' r='9'/%3E%3Ccircle cx='127' cy='80' r='9'/%3E%3Ccircle cx='370' cy='105' r='9'/%3E%3Ccircle cx='578' cy='42' r='9'/%3E%3Ccircle cx='237' cy='261' r='9'/%3E%3Ccircle cx='390' cy='382' r='9'/%3E%3C/g%3E%3C/svg%3E");
-}
+    
+    background-color: #000022;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='325' height='325' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke-opacity='0.45'%3E%3Cg stroke='%23026' stroke-width='17'%3E%3Cline x1='-8' y1='-8' x2='808' y2='808'/%3E%3Cline x1='-8' y1='792' x2='808' y2='1608'/%3E%3Cline x1='-8' y1='-808' x2='808' y2='8'/%3E%3C/g%3E%3Cg stroke='%23002163' stroke-width='16'%3E%3Cline x1='-8' y1='767' x2='808' y2='1583'/%3E%3Cline x1='-8' y1='17' x2='808' y2='833'/%3E%3Cline x1='-8' y1='-33' x2='808' y2='783'/%3E%3Cline x1='-8' y1='-783' x2='808' y2='33'/%3E%3C/g%3E%3Cg stroke='%23002060' stroke-width='15'%3E%3Cline x1='-8' y1='742' x2='808' y2='1558'/%3E%3Cline x1='-8' y1='42' x2='808' y2='858'/%3E%3Cline x1='-8' y1='-58' x2='808' y2='758'/%3E%3Cline x1='-8' y1='-758' x2='808' y2='58'/%3E%3C/g%3E%3Cg stroke='%23001f5c' stroke-width='14'%3E%3Cline x1='-8' y1='67' x2='808' y2='883'/%3E%3Cline x1='-8' y1='717' x2='808' y2='1533'/%3E%3Cline x1='-8' y1='-733' x2='808' y2='83'/%3E%3Cline x1='-8' y1='-83' x2='808' y2='733'/%3E%3C/g%3E%3Cg stroke='%23001e59' stroke-width='13'%3E%3Cline x1='-8' y1='92' x2='808' y2='908'/%3E%3Cline x1='-8' y1='692' x2='808' y2='1508'/%3E%3Cline x1='-8' y1='-108' x2='808' y2='708'/%3E%3Cline x1='-8' y1='-708' x2='808' y2='108'/%3E%3C/g%3E%3Cg stroke='%23001d56' stroke-width='12'%3E%3Cline x1='-8' y1='667' x2='808' y2='1483'/%3E%3Cline x1='-8' y1='117' x2='808' y2='933'/%3E%3Cline x1='-8' y1='-133' x2='808' y2='683'/%3E%3Cline x1='-8' y1='-683' x2='808' y2='133'/%3E%3C/g%3E%3Cg stroke='%23001c53' stroke-width='11'%3E%3Cline x1='-8' y1='642' x2='808' y2='1458'/%3E%3Cline x1='-8' y1='142' x2='808' y2='958'/%3E%3Cline x1='-8' y1='-158' x2='808' y2='658'/%3E%3Cline x1='-8' y1='-658' x2='808' y2='158'/%3E%3C/g%3E%3Cg stroke='%23001b4f' stroke-width='10'%3E%3Cline x1='-8' y1='167' x2='808' y2='983'/%3E%3Cline x1='-8' y1='617' x2='808' y2='1433'/%3E%3Cline x1='-8' y1='-633' x2='808' y2='183'/%3E%3Cline x1='-8' y1='-183' x2='808' y2='633'/%3E%3C/g%3E%3Cg stroke='%23001a4c' stroke-width='9'%3E%3Cline x1='-8' y1='592' x2='808' y2='1408'/%3E%3Cline x1='-8' y1='192' x2='808' y2='1008'/%3E%3Cline x1='-8' y1='-608' x2='808' y2='208'/%3E%3Cline x1='-8' y1='-208' x2='808' y2='608'/%3E%3C/g%3E%3Cg stroke='%23001949' stroke-width='8'%3E%3Cline x1='-8' y1='567' x2='808' y2='1383'/%3E%3Cline x1='-8' y1='217' x2='808' y2='1033'/%3E%3Cline x1='-8' y1='-233' x2='808' y2='583'/%3E%3Cline x1='-8' y1='-583' x2='808' y2='233'/%3E%3C/g%3E%3Cg stroke='%23001846' stroke-width='7'%3E%3Cline x1='-8' y1='242' x2='808' y2='1058'/%3E%3Cline x1='-8' y1='542' x2='808' y2='1358'/%3E%3Cline x1='-8' y1='-558' x2='808' y2='258'/%3E%3Cline x1='-8' y1='-258' x2='808' y2='558'/%3E%3C/g%3E%3Cg stroke='%23001743' stroke-width='6'%3E%3Cline x1='-8' y1='267' x2='808' y2='1083'/%3E%3Cline x1='-8' y1='517' x2='808' y2='1333'/%3E%3Cline x1='-8' y1='-533' x2='808' y2='283'/%3E%3Cline x1='-8' y1='-283' x2='808' y2='533'/%3E%3C/g%3E%3Cg stroke='%2300163f' stroke-width='5'%3E%3Cline x1='-8' y1='292' x2='808' y2='1108'/%3E%3Cline x1='-8' y1='492' x2='808' y2='1308'/%3E%3Cline x1='-8' y1='-308' x2='808' y2='508'/%3E%3Cline x1='-8' y1='-508' x2='808' y2='308'/%3E%3C/g%3E%3Cg stroke='%2300153c' stroke-width='4'%3E%3Cline x1='-8' y1='467' x2='808' y2='1283'/%3E%3Cline x1='-8' y1='317' x2='808' y2='1133'/%3E%3Cline x1='-8' y1='-333' x2='808' y2='483'/%3E%3Cline x1='-8' y1='-483' x2='808' y2='333'/%3E%3C/g%3E%3Cg stroke='%23001439' stroke-width='3'%3E%3Cline x1='-8' y1='342' x2='808' y2='1158'/%3E%3Cline x1='-8' y1='442' x2='808' y2='1258'/%3E%3Cline x1='-8' y1='-458' x2='808' y2='358'/%3E%3Cline x1='-8' y1='-358' x2='808' y2='458'/%3E%3C/g%3E%3Cg stroke='%23001336' stroke-width='2'%3E%3Cline x1='-8' y1='367' x2='808' y2='1183'/%3E%3Cline x1='-8' y1='417' x2='808' y2='1233'/%3E%3Cline x1='-8' y1='-433' x2='808' y2='383'/%3E%3Cline x1='-8' y1='-383' x2='808' y2='433'/%3E%3C/g%3E%3Cg stroke='%23013' stroke-width='1'%3E%3Cline x1='-8' y1='392' x2='808' y2='1208'/%3E%3Cline x1='-8' y1='-408' x2='808' y2='408'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;/
+    }
     header {
-        background-color: rgba(107, 102, 102, 0.8); /* 0.8 es la transparencia */
+        background-color: rgba(7, 7, 7, 0.8); /* 0.8 es la transparencia */
         padding: 10px 0;
     }
     
@@ -21,13 +23,27 @@ body {
     text-align: center;
 }
 
+/*covertura */
+#imagen-responsiva {
+ 
+
+    width: 100%;        /* La imagen ocupa todo el ancho del contenedor */
+    height: auto;       /* Ajusta la altura proporcionalmente */
+    max-width: 800px;   /* Limita el tamaño máximo a 800px */
+    border: 2px solid #ccc; /* Añade un borde gris claro */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    display: block;     /* Evita comportamientos no deseados con elementos en línea */
+    margin: 14px auto;     /* Centra la imagen horizontalmente */
+  }
+  
 .menu-bar li {
     display: inline;
     margin: 0 15px;
 }
 
 .menu-bar a {
-    color: rgb(24, 22, 22);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 18px;
 }
@@ -429,11 +445,28 @@ ul li {
     background-color: #3e40aa;
 }
 
+/* Efecto de alzado */
+.faq-question:hover {
+    transform: translateY(10px);
+    box-shadow: 01100px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para respuesta de preguntas */
+.faq-answer {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
 /* Sección de Contacto */
 .contact-section {
     margin: 40px 0;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #d31818;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(223, 4, 4, 0.1);
 }
@@ -511,57 +544,112 @@ ul li {
     overflow: hidden;
     border-radius: 50%; /* Redondear bordes del botón */
 }
-
 #principal {
     width: 10000px;
     height: auto;
     transition: transform 0.4s ease;
 }
 
-#miBoton:hover #principal {
-    transform: scale(1.05); /* Pequeño aumento en tamaño */
-}
-
-#miBoton::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 10px;
-    height: 10px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-#miBoton:hover::after {
-    animation: ripple 1s ease-out;
-    opacity: 1;
-}
-
-@keyframes ripple {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 0.8;
+@keyframes square-in-center {
+    from {
+      clip-path: inset(100% 100% 100% 100%);
     }
-    100% {
-        transform: translate(-50%, -50%) scale(15);
-        opacity: 0;
+    to {
+      clip-path: inset(0 0 0 0);
     }
-}
+  }
+  
+  @keyframes circle-out-center {
+    from {
+      clip-path: circle(0%);
+    }
+    to {
+      clip-path: circle(125%);
+    }
+  }
+  
+  #miBoton {
+    position: relative; /* Asegúrate de que el botón tenga posición relativa */
+    /* overflow: hidden; Evitar que el contenido sobresalga */
+  }
+  
+  #miBoton:hover #principal {
+    transform: scale(1.09); /* Pequeño aumento en tamaño */
+  }
+  
+
+  
+  #miBoton:hover::after {
+    animation: circle-out-center 2.5s cubic-bezier(.25, 1, .30, 1) both; /* Efecto de expansión */
+    opacity: 1; /* Hacerlo visible */
+  }*
 /*formularios */
-/* Estilos personalizados para el formulario de contacto */
-.support-form {
-    background-color: #f9f9f9; /* Fondo claro */
+
+/* Base styles */
+.contact-form-section {
     padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    max-width: 600px;
-    margin: 0 auto;
-    border: 1px solid #f70404; /* Borde sutil */
-}
+    margin-top: 20px;
+  }
+  
+  .support-form {
+    max-width: 600px; /* Limita el ancho máximo del formulario */
+    margin: auto; /* Centra el formulario horizontalmente */
+    background-color: #8d8787;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .support-form .form-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+  
+  .support-form .form-control {
+    width: 100%; /* Asegura que los inputs ocupen el ancho del contenedor */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Incluye padding y bordes en el ancho total */
+    margin-bottom: 15px;
+  }
+  
+  .support-form .btn {
+    width: 100%; /* Botón ocupa el ancho completo */
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .support-form .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .support-form {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .support-form {
+      padding: 10px;
+    }
+  
+    .support-form .form-control {
+      font-size: 14px; /* Reduce el tamaño de texto en inputs */
+    }
+  
+    .support-form .btn {
+      padding: 8px;
+    }
+  }
+  
 
 .support-form h2 {
     text-align: center;
@@ -603,3 +691,121 @@ ul li {
 .support-form button:hover {
     background-color: #dd1919; /* Cambiar a verde más oscuro en hover */
 }
+
+
+/*contrataciones*/
+/* Agrega estos estilos a tu archivo styles.css */
+.info-container {
+    background-color: #f3f4f6; /* Fondo suave para la sección */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+.info-container h3 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.list-group {
+    padding: 0;
+    list-style-type: none;
+}
+
+.list-group-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item:hover {
+    background-color: #e6e6e6;
+    transition: background-color 0.3s ease;
+}
+
+.location-text {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.location-image {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/*direccion y horario */
+/* Base styles */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(82, 12, 12, 0.1);
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+  }
+  
+  .contact-info,
+  .address-info {
+    flex: 1;
+    padding: 10px;
+    color: #ffffff;
+  }
+  
+  .contact-info h2,
+  .address-info h2 {
+    text-align: center;
+  }
+  
+  .contact-info a,
+  .address-info a {
+    color: #1bcc41;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover,
+  .address-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .address-info {
+    text-align: center; /* Asegura buena legibilidad */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .contact-section {
+      flex-direction: column; /* Coloca los elementos uno debajo del otro */
+      align-items: center;
+    }
+  
+    .contact-info,
+    .address-info {
+      flex: none; /* Evita que ocupen el ancho completo en modo columna */
+      width: 100%; /* Ocupan el ancho completo del contenedor */
+      text-align: center; /* Centra el contenido */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-section {
+      padding: 10px; /* Reduce el espacio en pantallas pequeñas */
+    }
+  
+    .contact-info p,
+    .address-info p {
+      font-size: 14px; /* Reduce el tamaño del texto */
+    }
+  }
+  

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zonas de Cobertura</title>
+  <style>
+    /* Contenedor del carrusel */
+    .carousel-container {
+      overflow: hidden;
+      width: 100%;
+      border: 2px solid #ddd;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    /* Texto de la zona */
+    .zone {
+      opacity: 0;
+      transition: opacity 1s;
+    }
+
+    /* Zona visible */
+    .zone.active {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contenedor del carrusel -->
+  <div class="carousel-container">
+    <div class="zone active">Veracruz</div>
+    <div class="zone">Chiapas</div>
+    <div class="zone">Jalisco</div>
+    <div class="zone">Hidalgo</div>
+    <div class="zone">Puebla</div>
+    <div class="zone">Oaxaca</div>
+    <div class="zone">Morelos</div>
+    <div class="zone">Guerrero</div>
+    <div class="zone">Michoacán</div>
+  </div>
+
+  <script>
+    // Configuración del carrusel de zonas
+    const zones = document.querySelectorAll('.zone');
+    let currentIndex = 0;
+
+    function showNextZone() {
+      zones[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % zones.length;
+      zones[currentIndex].classList.add('active');
+    }
+
+    // Cambio de zona cada 2 segundos
+    setInterval(showNextZone, 2000);
+  </script>
+
+</body>
+</html>
